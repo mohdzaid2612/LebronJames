@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+p {
+	font-family: 'Nunito';
+}
+
+/* first section */
+
+.lebren__image {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inner__section {
+	width: 90%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.left__image {
+	width: 50%;
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+.first__image {
+	margin-left: 200px;
+	margin-top: 50px;
+	width: 60%;
+	height: 50%;
+	object-fit: contain;
+	z-index: 1;
+}
+.bg-circle {
+	background: #000;
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	position: absolute;
+	left: 20%;
+	margin: auto;
+	z-index: -1;
+	border: 50px solid #fff;
+}
+.right__text {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right__text h1 {
+	margin-left: 100px;
+	font-size: 4rem;
+}
+.right__inner__text {
+	line-height: 0.8;
+}
+.the__text {
+	color: #fff;
+}
+.the__text::after {
+	content: "";
+	width: 15rem;
+	height: 2px;
+	background-color: #fff;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.last__text {
+	font-family: 'Poppins';
+}
+
+/* second section */
+
+.inner__section__second {
+	width: 95%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.left__image__second {
+	width: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.second__image {
+	margin-left: 200px;
+	width: 60%;
+	height: 50%;
+	object-fit: contain;
+	z-index: 1;
+}
+.bg-circle__second {
+	background: #000;
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	position: absolute;
+	left: 22%;
+	margin: auto;
+	z-index: -1;
+	border: 50px solid #fff;
+}
+.right__text__second {
+	width: 40%;
+	/* display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center; */
+}
+.right__text__second h1 {
+	margin-left: 100px;
+	font-size: 6rem;
+}
+.right__text__second h3 {
+	margin-left: 110px;
+	font-size: 2.5rem;
+	color: #fff;
+}
+.right__inner__text__second {
+	line-height: 0.1;
+}
+
+/* .breaking__down::after {
+	content: "";
+	width: 15rem;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin-left: 110px;
+	margin-top: 20px;
+} */
+
+.right__inner__text__second p {
+	line-height: 1.7;
+	margin-left: 100px;
+	font-size: 1.2rem;
+}
+
+/* third section */
+.right__inner__text p {
+	margin-left: 110px;
+}
+
+.right__inner__text p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+#pp-nav ul li a span {
+	width: 30px;
+	border-radius: 0;
+	border-color: #fff !important;
+	outline: none;
+	background-color: #fff;
+	/* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+}
+#pp-nav ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+}
+#pp-nav ul li .active span {
+	width: 50px;
+	background-color: #000;
+	border: none;
+}

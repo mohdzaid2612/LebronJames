@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Authentication.css">
+</head>
+<body>
+
+
+    
+
+        
+    <header class="main-header">
+        <div class="logo">
+            <a href="./index.htm">
+                <!-- <img src="./assets/images/logo.png" alt=""> -->
+            </a>
+        </div>
+
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li class="nav-link"><a href="./index.htm" >Home</a></li>
+            <li class="nav-link"><a href="./portfolio.htm">Portfolio</a></li>
+            <li class="nav-link"><a href="./Authentication.htm"  class="open">Login</a></li>
+        </ul>
+    </header>
+
+       <div class="form__login">
+           <div class="login__inner">
+               <div class="login__pic">
+                    <img src="./images/lebren4.png" alt="" srcset="">
+               </div>
+               <form class="form__inputs">
+                   <h2>Welcome to Lobren World..!!</h2>
+                  <div class="form__inner">
+                    <div class="inputs">
+                        <h3>Username</h3>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="inputs">
+                        <h3>Password</h3>
+                      <input type="password" name="" id="">
+                  </div>
+                  <button>Submit</button>
+                  </div>
+            </form>
+           </div>
+       </div>
+ 
+
+    <script type="text/javascript">
+        const button = document.querySelector('.animated-button')
+        
+        button.addEventListener('click' , function(e) {
+            let x = e.clientX - e.target.offsetLeft
+            let y = e.clientY - e.target.offsetTop
+
+            let ripple = document.createElement('span')
+            ripple.style.left = x + 'px'
+            ripple.style.top = y + 'px'
+            button.appendChild(ripple)
+
+            setTimeout( () => {
+                ripple.remove()
+            },1000)
+        });
+    </script>
+
+    <script src="./js/header.js"></script>
+
+    <script>
+        const line = document.querySelector('.left')
+
+        window.addEventListener('scroll' , () => {
+            const offset = window.scrollY
+
+            if(offset > 30)
+                line.classList.add('page-scrolled')
+            else
+                line.classList.remove('page-scrolled')
+        });
+    </script>
+   
+</body>
+</html>
